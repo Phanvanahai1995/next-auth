@@ -4,8 +4,6 @@ import { auth, signOut } from "@/auth";
 export default async function SettingPage() {
   const session = await auth();
 
-  console.log(session);
-
   return (
     <div className="text-center py-4">
       <h2>Hello: {session?.user?.name}</h2>

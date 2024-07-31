@@ -2,7 +2,7 @@ import React from "react";
 import { IoMdDoneAll } from "react-icons/io";
 
 interface FormSuccessProps {
-  message: string;
+  message: string | undefined;
 }
 
 export default function FormSuccess({ message }: FormSuccessProps) {

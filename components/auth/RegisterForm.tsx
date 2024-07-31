@@ -21,8 +21,8 @@ import FormSuccess from "./FormSuccess";
 import { register } from "@/action/regiter";
 
 export default function RegisterForm() {
-  const [error, setError] = useState<string>("");
-  const [success, setSuccess] = useState<string>("");
+  const [error, setError] = useState<string | undefined>("");
+  const [success, setSuccess] = useState<string | undefined>("");
   const [isPending, startTransition] = useTransition();
 
   const form = useForm<z.infer<typeof RegisterSchema>>({

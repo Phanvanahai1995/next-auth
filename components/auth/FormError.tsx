@@ -2,7 +2,7 @@ import React from "react";
 import { IoMdWarning } from "react-icons/io";
 
 interface FormErrorProps {
-  message: string;
+  message: string | undefined;
 }
 
 export default function FormError({ message }: FormErrorProps) {
